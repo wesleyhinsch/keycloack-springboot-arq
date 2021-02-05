@@ -1,0 +1,20 @@
+curl --location --request POST 'http://10.79.56.149:30080/auth/realms/demo-realm/protocol/openid-connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=password' \
+--data-urlencode 'client_id=gateway-microservice' \
+--data-urlencode 'client_secret=32b5a905-0893-4e0e-87fe-7b0064874028' \
+--data-urlencode 'username=funcionario1' \
+--data-urlencode 'password=admin'
+
+
+
+curl --location --request GET 'http://localhost:8091/test/admin' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJLb1RldEdWbnZidTBRdm5Lc09Kem9Hb3dCbTNZQkQtbzdIc1h5QUdsbEpRIn0.eyJleHAiOjE2MTIyOTg5ODYsImlhdCI6MTYxMjI5ODY4NiwianRpIjoiZjBmNGZiM2ItYjk2YS00ODRjLTkyODQtZGJmMjg1YzljYmE0IiwiaXNzIjoiaHR0cDovLzEwLjc5LjU2LjE0OTozMDA4MC9hdXRoL3JlYWxtcy9kZW1vLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImZlNmFiZjY0LWUzZTQtNDMxYS1iMTk0LWNiZTIzMmE1OGVhNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImdhdGV3YXktbWljcm9zZXJ2aWNlIiwic2Vzc2lvbl9zdGF0ZSI6Ijk4OTIzMjg5LTVlZDUtNGE1Zi04NWUyLWFjYTJkZTVhYzg3YyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJhcHAtYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImdhdGV3YXktbWljcm9zZXJ2aWNlIjp7InJvbGVzIjpbImFkbWluIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiZnVuY2lvbmFyaW8xIn0.R5z2RJl2-xXDyKbPBBmao9QFAwbiHI7LsnIby-egu0ui5WcjrCnFX_XYjUAKlItnFmyRLS4McowM6020zH8n6B9J-B5rFqOKYheW60iPFL2864yvL2mm6PHOCorVe7XqtYWlLPK2WAG65lgyG6nmlySLEg-r-pgn3pNj3qyTpRm9zxL3ZvdQwu20b-BQoobvIveVDskyFMbNnBSjmoTuCO7HSIbMwDOc294aFRLcb-MmxmKAL3jaIMJ9g7MLfPaSrGiDRW5qPWZrQciD0Pti6gWmOGs_DgPd819HINzTADolbgX-2s3XWsu3l7lFBsxLGFoDT7cR0lurnhzbrgzARQ' \
+--header 'Cookie: JSESSIONID=A6EA0639452FD13DD7D475BA57C850B8'
+
+
+https://joaofaro.eng.br/2020/07/09/spring-boot-garantindo-a-seguranca-de-apis-rest-com-keycloak-e-spring-boot/
+
+
+
+
